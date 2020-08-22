@@ -69,6 +69,6 @@ class EquipmentController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def equipment_params
-      params.require(:equipment).permit(:equipmentcode, :dateBuyEquipment, :price, :rental, :maintenance)
+      params.require(:equipment).permit(:equipmentcode, :dateBuyEquipment, :price, :rental, :maintenance, :salesoffice_id)
     end
 end
