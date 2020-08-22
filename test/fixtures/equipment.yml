@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipment-code: MyString
+  dateBuyEquipment: 2020-08-22
+  price: 
+  rental: false
+  maintenance: false
+
+two:
+  equipment-code: MyString
+  dateBuyEquipment: 2020-08-22
+  price: 
+  rental: false
+  maintenance: false
