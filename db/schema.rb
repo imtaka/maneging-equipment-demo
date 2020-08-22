@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_22_094301) do
+ActiveRecord::Schema.define(version: 2020_08_22_124813) do
 
   create_table "equipment", force: :cascade do |t|
     t.string "equipmentcode"
@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(version: 2020_08_22_094301) do
     t.integer "price"
     t.boolean "rental"
     t.boolean "maintenance"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "salesoffice_id"
+  end
+
+  create_table "salesoffices", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
